@@ -10,6 +10,7 @@ This is a modified version of the Tetris handheld game console. The original mot
 图纸有几处错误：
 1. 音频功放的部分使用SAI接口，但若使用H723芯片，则该接口对应的SAI模块不支持半传输DMA中断，因此使用跳线连接到I2S1接口；
 2. 原本预留了一个ADC通道，用于连接模拟麦克风，但若使用H723芯片，对应通道不支持半传输中断；
+3. 主板上集成一颗MPU6050传感器，但电路绘制错误，芯片焊上不可用；
 3. 没有兼容原机的电池座
 
 ![预览](front.jpg)
